@@ -1,0 +1,369 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(318deg,#ffe4b3 24%, #f7c598 100%);
+  overflow: hidden;
+/* cursor: none !important; */
+}
+
+/* avoind dragging and coloring */
+div, p, h1, h2, h3, h4, img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f6ba4a53;
+    animation: float 20s infinite ease-in-out;
+    pointer-events: none;
+}
+@keyframes float {
+    0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    }
+    50% {
+    transform: translateY(-100px) scale(1.1);
+    opacity: 0.6;
+    }
+    100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    }
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hello {
+    font-size: 3rem;
+    color: #ff7f2a;
+    margin-bottom: 1rem;
+}
+
+#my-name-link {
+  color: #ff8f2a;
+  text-decoration: none;
+}
+
+#my-name-link:hover {
+  color: #d56401;
+  cursor: pointer;
+}
+
+.header-text {
+    font-size: 1.25rem;
+    color: #444;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.juice {
+  width: 300px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.orange {
+    transition: transform 0.3s;
+    background: none;
+    border: none;
+    margin: 0;
+    z-index: 1;
+}
+.orange img {
+    width: 100px;
+}
+.orange:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.dive {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  font-size: 10px;
+  width: 100%;
+  justify-content: space-around;
+  color: #f67c1289;
+  flex-wrap: wrap;
+  bottom: 0;
+  z-index: 5;
+}
+
+@keyframes fallRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  10% {
+    transform: translateY(70px) rotate(25deg);
+  }
+  15% {
+    transform: translateY(140px) rotate(38deg);
+  }
+  30% {
+    transform: translateY(300px) rotate(36deg);
+  }
+  50% {
+    transform: translateY(1350px) rotate(25deg);
+  }
+  100% {
+    transform: translateY(2150px) rotate(-10deg);
+    opacity: 0.5;
+  }
+}
+
+.animate-fall {
+  animation: fallRotate 6s ease-in forwards;
+}
+
+@keyframes orangeZoom {
+  20% {
+    width: 100px;
+  }
+  40% {
+    width: 500px;
+  }
+  100% {
+    width: 500px;
+  }
+}
+
+.orange-zoom img{
+  animation: orangeZoom 4s ease-in forwards;
+}
+
+@keyframes zoomJuice {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 4100px;
+    transform: translateY(-1500px);
+  }
+}
+
+.zoom-juice {
+  animation: zoomJuice 2s ease-out forwards;
+}
+
+@keyframes orangeFloating {
+  0% {
+    transform: translateY(2150px) rotate(-10deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(2100px) rotate(-15deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(2150px) rotate(-10deg);
+    opacity: 0.5;
+  }
+}
+
+.orange-float {
+  animation: orangeFloating 10s infinite ease-in-out;
+}
+
+
+
+@keyframes floatingButtons {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(50px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.bubbleBtn {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c374052c;
+  animation: floatingButtons 15s infinite ease-in-out;
+  z-index: 3;
+  text-align: center;
+  line-height: 100px;
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #603801bb;
+  transition: all 0.8s ease;
+  scale: 0;
+  transition: scale 0.5s ease;
+  /* border: 5px dotted rgb(106, 50, 1); */
+  align-content: center;
+}
+
+.bubbleBtn:hover {
+  cursor: pointer;
+}
+.back_to_start_bubble_menu {
+  cursor: pointer;
+}
+.text-bubble:hover {
+  cursor: default;
+}
+
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
+}
+
+.skill-bubble {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  background-color: #c374052c;
+}
+
+.back_to_start_bubble_menu {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c374052c;
+  animation: floatingButtons 15s infinite ease-in-out;
+  z-index: 3;
+  text-align: center;
+  line-height: 100px;
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #603801bb;
+  transition: all 0.8s ease;
+  scale: 0;
+  transition: scale 0.5s ease;
+
+  pointer-events: auto;
+  width: 100px; 
+  height: 100px; 
+  bottom: 55px;
+  left: 20px;
+}
+
+.back_to_start_bubble_menu:hover {
+  background-color: #c374054b;
+  /* cursor: none; */
+  color: #2e1b01;
+}
+
+.bubble-buttons-menu-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 400px;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  /* background: rgba(0, 0, 0, 0); */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.bubble-scroll-container {
+  height: 300px;
+  position: relative;
+  z-index: 4;
+  /*animation: scrollLeft 20s linear infinite;*/
+  margin: auto;
+}
+
+.bubbleBtn:nth-child(2n) {
+  top: 50% !important;
+}
+
+.myCursor {
+  position: absolute;
+  z-index: 5;
+  width: 12px;
+  height: 100px;
+  transform: rotate(330deg) translateX(28px);
+}
+
+.menu-bubble:hover, .audio-bubble:hover, .link-bubble:hover{
+  background-color: #c374054b;
+  color: #2e1b01;
+}
+
+.audio_playing {
+  border: 8px dashed;
+  animation: audio_playing_animation 5s infinite ease-out;
+  animation-duration: 5s !important;
+}
+
+@keyframes audio_playing_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%);
+}
+
+/*
+
+@keyframes bubbleBurst {
+  0% {
+    border: 1px dotted black;
+    
+  }
+  100% {
+    border: 2px dotted black;
+  }
+}
+
+.bubble-burst {
+  animation: bubbleBurst 1s ease;
+}
+
+*/
+
+
+
+/* every second chil: element:nth-child(2n) */
+
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+  }
+}

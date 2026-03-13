@@ -1,0 +1,211 @@
+{
+  "skills": [
+    "python",
+    "javascript",
+    "react",
+    "json",
+    "php",
+    "node.js",
+    "database",
+    "render",
+    "Cpanel",
+    "WordPress"
+  ],
+  "projects": {
+    "python": {
+      "sorting game": "link"
+    },
+    "javascript": {
+      "which clicker game": "link",
+      "MemeCar777 game": "link",
+      "Ghost kitchen game": "link"
+    }
+  },
+  "about me": {
+    "languages": {
+      "Finnish": "voice/finnish_voice.mp3",
+      "English": "voice/english_voice.mp3",
+      "Russian": "voice/russian_voice.mp3"
+    },
+    "interests": {
+      "Snowboarding": "img",
+      "Skating": "img",
+      "Sewing": "img"
+    }
+  },
+
+  "content-type": {
+    "menu": 1,
+    "text": 2,
+    "audio": 3,
+    "link": 4
+  },
+
+  "content": [
+    {
+      "title": "Skills",
+      "type": 1,
+      "id": 1,
+      "parent": 0,
+      "content": ""
+    },
+    {
+      "title": "Projects",
+      "type": 1,
+      "id": 2,
+      "parent": 0,
+      "content": ""
+    },
+    {
+      "title": "About me",
+      "type": 1,
+      "id": 3,
+      "parent": 0,
+      "content": ""
+    },
+
+    {
+      "title": "Python",
+      "type": 2,
+      "id": 4,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": "JavaScript",
+      "type": 2,
+      "id": 5,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": "React",
+      "type": 2,
+      "id": 6,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": "PHP",
+      "type": 2,
+      "id": 10,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": "WordPress",
+      "type": 2,
+      "id": 11,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": "Git & GitHub",
+      "type": 2,
+      "id": 12,
+      "parent": 1,
+      "content": ""
+    },
+
+    {
+      "title": "Python",
+      "type": 1,
+      "id": 7,
+      "parent": 2,
+      "content": ""
+    },
+    {
+      "title": "JavaScript",
+      "type": 1,
+      "id": 8,
+      "parent": 2,
+      "content": ""
+    },
+
+    {
+      "title": "Sorting game",
+      "type": 4,
+      "id": 9,
+      "parent": 7,
+      "content": "link to game"
+    },
+
+    {
+      "title": "Which clicker game",
+      "type": 4,
+      "id": 13,
+      "parent": 8,
+      "content": "link to game"
+    },
+    {
+      "title": "MemeCar777 game",
+      "type": 4,
+      "id": 14,
+      "parent": 8,
+      "content": "link to game"
+    },
+
+    {
+      "title": "Languages",
+      "type": 1,
+      "id": 15,
+      "parent": 3,
+      "content": ""
+    },
+    {
+      "title": "Interests",
+      "type": 1,
+      "id": 16,
+      "parent": 3,
+      "content": ""
+    },
+
+    {
+      "title": "Finnish",
+      "type": 3,
+      "id": 17,
+      "parent": 15,
+      "content": "/voice/my_voice_fin.mp4"
+    },
+    {
+      "title": "English",
+      "type": 3,
+      "id": 18,
+      "parent": 15,
+      "content": "/voice/my_voice_en.mp4"
+    },
+    {
+      "title": "Russian",
+      "type": 3,
+      "id": 19,
+      "parent": 15,
+      "content": "/voice/my_voice_ru.mp4"
+    },
+
+    {
+      "title": "Skateboarding",
+      "type": 2,
+      "id": 20,
+      "parent": 16,
+      "content": ""
+    },
+    {
+      "title": "Sewing",
+      "type": 2,
+      "id": 21,
+      "parent": 16,
+      "content": ""
+    },
+    {
+      "title": "Snowboarding",
+      "type": 2,
+      "id": 22,
+      "parent": 16,
+      "content": ""
+    },
+
+
+    
+    {"last_id": 20 }
+  ]
+}
