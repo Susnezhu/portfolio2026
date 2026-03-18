@@ -9,14 +9,18 @@
 </head>
 <body>
   <div class="content">
-    <h1 class="hello">Hello! I am <a 
-      href="https://www.linkedin.com/in/snezhana-blagodatskis-67645834b/" 
+    <div class="language-selector" id="language-selector">
+      <img src="/lang/fi.png" class="languageBtn" id="fi-lang" style="animation-duration: 8s" onclick="changeLanguage('fi')">
+      <img src="/lang/en.png" class="languageBtn" id="en-lang" style="animation-duration: 15s" onclick="changeLanguage('en')">
+      <img src="/lang/ru.png" class="languageBtn" id="ru-lang" style="animation-duration: 10s" onclick="changeLanguage('ru')">
+    </div>
+    <h1 class="hello" id="hello-text">Hello! I am <a 
+      class="blink"
       id="my-name-link" 
-      target="_blank"
       >Susanna</a></h1>
-    <p class="header-text">A creative programmer with a soul made of orange</p>
+    <p class="header-text" id="header-text">A creative programmer with a soul made of orange</p>
 
-    <p сlass="dive">↓ dive in</p>
+    <p сlass="dive" id="dive">↓ dive in</p>
     <button class="orange" id="fallImage"><img src="orange.png"></button>
 
     <img src="juice.png" class="juice" id="juice">

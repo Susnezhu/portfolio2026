@@ -3,9 +3,86 @@ const scrollContainer = document.getElementById('bubble-scroll-container');
 const bubbleBackBtn = document.getElementById('back_to_start_bubble_menu');
 const myCursor = document.getElementById("myCursor");
 const yearSpan = document.getElementById("current-year");
+const headerText = document.getElementById('header-text');
+const helloText = document.getElementById('hello-text');
+const diveText = document.getElementById('dive');
+
+const langButtons = document.querySelectorAll('.languageBtn');
+const langDiv = document.getElementById('language-selector');
+
+const pop_sound = new Audio('/sounds/pop.mp3');
+const drowning_sound = new Audio('/sounds/drowning.mp3');
+const bubbling_sound = new Audio('/sounds/bubbling.mp3')
+
+pop_sound.volume = 0.2;
+drowning_sound.volume = 0.1;
+bubbling_sound.volume = 0.5;
+
+language = 'en'
+const activeLangBtn = document.getElementById(language + '-lang');
+activeLangBtn.classList.add('active_lang');
 
 const date = new Date();
 yearSpan.innerText = date.getFullYear();
+
+
+// LANGUAGE CHANGER
+
+console.log(langButtons)
+
+langButtons.forEach(langBtn => {
+  langBtn.addEventListener('mouseover', function() {
+    langBtn.classList.add('paused');
+  })
+
+  langBtn.addEventListener('mouseout', function() {
+    langBtn.classList.remove('paused');
+  })
+});
+
+function changeLanguage(lang) {
+  language = lang;
+
+  langButtons.forEach(btn => {
+    btn.classList.remove('active_lang');
+  })
+
+  const activeLangBtn2 = document.getElementById(language + '-lang');
+  activeLangBtn2.classList.add('active_lang');
+      
+  const nameLink = '<a class="blink" id="my-name-link">';
+  
+  const texts = {
+    "hello": {
+      "ru": "Привет! Меня зовут " + nameLink + "Сусанна</a>",
+      "fi": "Hei! Minä olen " + nameLink + "Susanna</a>",
+      "en": "Hello! I am " + nameLink + "Susanna</a>",
+    },
+    "slogan": {
+      "ru": "Креативный программист с душой, сотканной из апельсинов",
+      "fi": "Luova ohjelmoija, jonka sielu on kudottu appelsiinista",
+      "en": "A creative programmer with a soul made of orange"
+    },
+    "dive": {
+      "ru": "↓ ныряй",
+      "fi": "↓ sukella",
+      "en": "↓ dive in"
+    }
+  }
+
+  // helloText.innerHTML = 'Hello! I am <a class="blink" id="my-name-link">Susanna</a>';
+  helloText.innerHTML = texts['hello'][lang];
+  headerText.innerHTML = texts['slogan'][lang];
+  diveText.innerHTML = texts['dive'][lang]
+
+  const myNameLink = document.getElementById('my-name-link');
+  myNameLink.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/snezhana-blagodatskis-67645834b/', '_blank');
+  })
+
+}
+
+changeLanguage('en')
 
 bubbleBackBtn.addEventListener('mouseover', () => {
   bubbleBackBtn.classList.add('paused');
@@ -28,10 +105,22 @@ const bubbleButtons = document.getElementsByClassName('bubbleBtn');
 
 // orange fall animation
 orange.addEventListener('click', () => {
+  langDiv.style = 'transform: translateY(-100px); transition: all 2s ease'
+
   orange.classList.add('animate-fall');
   orange.classList.add('orange-zoom');
 
   menuDiv.classList.remove('events-none')
+
+  setTimeout(() => {
+    drowning_sound.currentTime = 0;
+    drowning_sound.play();
+  }, 500)
+
+  setTimeout(() => {
+    bubbling_sound.currentTime = 0;
+    bubbling_sound.play();
+  },1500)
 
   setTimeout(() => {
     bublesbg[0].style.display = 'none';
@@ -42,7 +131,7 @@ orange.addEventListener('click', () => {
 
       get_data()
       
-    }, 6000)
+    }, 5000)
   }, 1000)
 
 });
@@ -68,7 +157,7 @@ async function get_data() {
   const content_types = data['content-type'];
   const content = data['content'];
 
-  let left = 250;
+  let left = 230;
   let window_size = window.innerWidth;
 
   let amound_elements = 0;
@@ -76,7 +165,7 @@ async function get_data() {
   function open_menu() {
     amound_elements = 0;
     bubbleBackBtn.style.scale = 0;
-    left = 250;
+    left = 230;
 
     content.forEach(element => {
       if(element['parent'] == current_parent) {
@@ -85,14 +174,15 @@ async function get_data() {
       }
     });
 
-    let scroll_width = (amound_elements * (180 + 50)) + 250 *2;
+    let scroll_width = (amound_elements * (150 + 50)) + 180 * 2;
     scrollContainer.style.width = scroll_width + 'px';
 
     content.forEach(element => {
       if(element['parent'] == current_parent) {
         console.log(element)
+
         const bubble = create_bubble(element);
-        left += 250;
+        left += 180;
         scrollContainer.appendChild(bubble);
       }
     });
@@ -109,13 +199,14 @@ async function get_data() {
 
     const bubbleBtn = document.createElement('div');
     bubbleBtn.classList = 'bubbleBtn';
-    bubbleBtn.style = `width: 180px; height: 180px; top: 10px; left: ${left}px; animation-duration: ${random_duration}s`;
-    bubbleBtn.textContent = element['title'];
+    bubbleBtn.style = `top: 10px; left: ${left}px; animation-duration: ${random_duration}s`;
+    bubbleBtn.textContent = element['title'][language];
 
     switch (element['type']) {
       case 1: // Menu bubble
         bubbleBtn.classList.add('menu-bubble');
         bubbleBtn.addEventListener('click', () => {
+
           scrollContainer.innerHTML = '';
           // bubbleStartBtn.style.scale = 0;
           current_parent = element['id']
@@ -127,9 +218,11 @@ async function get_data() {
         break;
       case 3: // Audio bubble
         bubbleBtn.classList.add('audio-bubble');
+
+        const audio = new Audio(element['content']);
+
         bubbleBtn.addEventListener('click', () => {
 
-          const audio = new Audio(element['content']);
           audio.currentTime = 0;
           audio.play();
 
@@ -144,7 +237,12 @@ async function get_data() {
         bubbleBtn.title = 'Open link';
         bubbleBtn.classList.add('link-bubble');
         bubbleBtn.addEventListener('click', () => {
-          alert("Sorry, links to projects are not working yet. Try another time")
+
+          if (element['content'] == '') {
+            alert('Link to this project is not available')
+          } else {
+            window.open(element['content'], '_blank');
+          }
         })
         break;
       default:
@@ -171,6 +269,7 @@ async function get_data() {
     let current_bubble = 0;
 
     let bubble_here = setInterval(() => {
+
       bubbleButtons[current_bubble].style.scale = 1;
 
       current_bubble += 1;
@@ -181,10 +280,14 @@ async function get_data() {
           bubbleBackBtn.style.scale = 1;
         }
       }
+
+      pop_sound.currentTime = 0;
+      pop_sound.play();
     }, 300);
   }
 
   bubbleBackBtn.addEventListener('click', () => {
+
     scrollContainer.innerHTML = '';
     current_parent = 0;
     open_menu()

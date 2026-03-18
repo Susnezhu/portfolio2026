@@ -37,6 +37,22 @@ div, p, h1, h2, h3, h4, img {
     }
 }
 
+.languageBtn {
+  animation: littleFloat 15s infinite ease-in-out;
+}
+
+@keyframes littleFloat {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
 .content {
     height: 100vh;
     display: flex;
@@ -48,6 +64,36 @@ div, p, h1, h2, h3, h4, img {
     position: relative;
     overflow: hidden;
 }
+
+.language-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.language-selector img{
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.language-selector img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.active_lang:hover {
+  opacity: 1 !important;
+}
+.active_lang {
+  opacity: 0.8 !important
+}
+
+
 
 .hello {
     font-size: 3rem;
@@ -106,8 +152,32 @@ div, p, h1, h2, h3, h4, img {
   justify-content: space-around;
   color: #f67c1289;
   flex-wrap: wrap;
-  bottom: 0;
+  bottom: 10px;
   z-index: 5;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.blink {
+  animation: blinking 5s infinite ease-in;
+}
+
+.blink:hover {
+  animation: none;
+}
+
+@keyframes blinking {
+  0% {
+    color: #ff8f2a;
+  }
+  50% {
+    color: #d56401;
+  }
+  100% {
+    color: #ff8f2a;
+  }
 }
 
 @keyframes fallRotate {
@@ -200,13 +270,16 @@ div, p, h1, h2, h3, h4, img {
 }
 
 .bubbleBtn {
+  width: 150px;
+  height: 150px;
+
   position: absolute;
   border-radius: 50%;
   background-color: #c374052c;
   animation: floatingButtons 15s infinite ease-in-out;
   z-index: 3;
   text-align: center;
-  line-height: 100px;
+  /* line-height: 100px; */
   font-family: "Freckle Face", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -278,7 +351,7 @@ div, p, h1, h2, h3, h4, img {
 
 .bubble-buttons-menu-scroll {
   position: absolute;
-  top: 0;
+  top: 35px;
   left: 0;
   width: 100vw;
   height: 400px;
@@ -365,5 +438,22 @@ div, p, h1, h2, h3, h4, img {
 @media (max-width: 500px) {
   .footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .juice {
+    width: 250px;
+  }
+  .orange img {
+    width: 80px;
+  }
+  .hello {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  .bubbleBtn {
+    width: 150px;
+    height: 150px;
   }
 }
