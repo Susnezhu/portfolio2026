@@ -10,9 +10,9 @@ const diveText = document.getElementById('dive');
 const langButtons = document.querySelectorAll('.languageBtn');
 const langDiv = document.getElementById('language-selector');
 
-const pop_sound = new Audio('/sounds/pop.mp3');
-const drowning_sound = new Audio('/sounds/drowning.mp3');
-const bubbling_sound = new Audio('/sounds/bubbling.mp3')
+const pop_sound = new Audio('sounds/pop.mp3');
+const drowning_sound = new Audio('sounds/drowning.mp3');
+const bubbling_sound = new Audio('sounds/bubbling.mp3')
 
 pop_sound.volume = 0.2;
 drowning_sound.volume = 0.1;
