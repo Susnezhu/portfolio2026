@@ -1,0 +1,369 @@
+{
+  "test": {
+    "skills": [
+      "python",
+      "javascript",
+      "react",
+      "json",
+      "php",
+      "node.js",
+      "database",
+      "render",
+      "Cpanel",
+      "WordPress"
+    ],
+    "projects": {
+      "python": {
+        "sorting game": "link"
+      },
+      "javascript": {
+        "which clicker game": "link",
+        "MemeCar777 game": "link",
+        "Ghost kitchen game": "link"
+      }
+    },
+    "about me": {
+      "languages": {
+        "Finnish": "voice/finnish_voice.mp3",
+        "English": "voice/english_voice.mp3",
+        "Russian": "voice/russian_voice.mp3"
+      },
+      "interests": {
+        "Snowboarding": "img",
+        "Skating": "img",
+        "Sewing": "img"
+      }
+    }
+  },
+
+
+
+  "content-type": {
+    "menu": 1,
+    "text": 2,
+    "audio": 3,
+    "link": 4
+  },
+
+  "content": [
+    {
+      "title": {
+        "fi": "Taidot",
+        "en": "Skills",
+        "ru": "Навыки"
+      },
+      "type": 1,
+      "id": 1,
+      "parent": 0,
+      "content": ""
+    },
+    {
+      "title":{
+        "fi": "Projektit",
+        "en": "Projects",
+        "ru": "Проекты"
+      },
+      "type": 1,
+      "id": 2,
+      "parent": 0,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Tietoa minusta",
+        "en": "About me",
+        "ru": "Обо мне"
+      },
+      "type": 1,
+      "id": 3,
+      "parent": 0,
+      "content": ""
+    },
+
+    {
+      "title": {
+        "fi": "Python",
+        "en": "Python",
+        "ru": "Python"
+      },
+      "type": 2,
+      "id": 4,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "JavaScript",
+        "en": "JavaScript",
+        "ru": "JavaScript"
+      },
+      "type": 2,
+      "id": 5,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "React",
+        "en": "React",
+        "ru": "React"
+      },
+      "type": 2,
+      "id": 6,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "PHP",
+        "en": "PHP",
+        "ru": "PHP"
+      },
+      "type": 2,
+      "id": 10,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "WordPress",
+        "en": "WordPress",
+        "ru": "WordPress"
+      },
+      "type": 2,
+      "id": 11,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Git & GitHub",
+        "en": "Git & GitHub",
+        "ru": "Git & GitHub"
+      },
+      "type": 2,
+      "id": 12,
+      "parent": 1,
+      "content": ""
+    },
+
+    {
+      "title": {
+        "fi": "Python",
+        "en": "Python",
+        "ru": "Python"
+      },
+      "type": 1,
+      "id": 7,
+      "parent": 2,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "JavaScript",
+        "en": "JavaScript",
+        "ru": "JavaScript"
+      },
+      "type": 1,
+      "id": 8,
+      "parent": 2,
+      "content": ""
+    },
+
+    {
+      "title": {
+        "fi": "Lajittelu peli",
+        "en": "Sorting game",
+        "ru": "Игра про сортировку"
+      },
+      "type": 4,
+      "id": 9,
+      "parent": 7,
+      "content": ""
+    },
+
+    {
+      "title": {
+        "fi": "noita klikkeripeli",
+        "en": "Witch clicker game",
+        "ru": "ведьма игра кликер"
+      },
+      "type": 4,
+      "id": 13,
+      "parent": 8,
+      "content": "https://susnezhu.github.io/witch_clicker_game/"
+    },
+    {
+      "title": {
+        "fi": "MemeCar777 peli",
+        "en": "MemeCar777 game",
+        "ru": "MemeCar777 рулетка"
+      },
+      "type": 4,
+      "id": 14,
+      "parent": 8,
+      "content": "https://susnezhu.github.io/MemeCat777/"
+    },
+
+    {
+      "title": {
+        "fi": "Kielet",
+        "en": "Languages",
+        "ru": "Языки"
+      },
+      "type": 1,
+      "id": 15,
+      "parent": 3,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Harrastukset",
+        "en": "Interests",
+        "ru": "Хобби"
+      },
+      "type": 1,
+      "id": 16,
+      "parent": 3,
+      "content": ""
+    },
+
+    {
+      "title": {
+        "fi": "Suomi",
+        "en": "Finnish",
+        "ru": "Финский"
+      },
+      "type": 3,
+      "id": 17,
+      "parent": 15,
+      "content": "voice/my_voice_fin.mp3"
+    },
+    {
+      "title": {
+        "fi": "Englantti",
+        "en": "English",
+        "ru": "Английский"
+      },
+      "type": 3,
+      "id": 18,
+      "parent": 15,
+      "content": "voice/my_voice_en.mp3"
+    },
+    {
+      "title": {
+        "fi": "Venäjä",
+        "en": "Russian",
+        "ru": "Русский"
+      },
+      "type": 3,
+      "id": 19,
+      "parent": 15,
+      "content": "voice/my_voice_ru.mp3"
+    },
+
+    {
+      "title": {
+        "fi": "Skeittilautailu",
+        "en": "Skateboarding",
+        "ru": "Скейтбординг"
+      },
+      "type": 2,
+      "id": 20,
+      "parent": 16,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Ompelu",
+        "en": "Sewing",
+        "ru": "Шитьё"
+      },
+      "type": 2,
+      "id": 21,
+      "parent": 16,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Lumilautailu",
+        "en": "Snowboarding",
+        "ru": "Сноубординг"
+      },
+      "type": 2,
+      "id": 22,
+      "parent": 16,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Kummituksen keittiö peli",
+        "en": "Ghost Kitchen game",
+        "ru": "Призрачная кухня игра"
+      },
+      "type": 4,
+      "id": 23,
+      "parent": 8,
+      "content": "https://susnezhu.github.io/kummituksen_keittio/"
+    },
+    {
+      "title": {
+        "fi": "Sikanoppapeli",
+        "en": "pig dice game",
+        "ru": "Игра в кости"
+      },
+      "type": 4,
+      "id": 24,
+      "parent": 8,
+      "content": "https://susnezhu.github.io/sikanoppapeli/"
+    },
+    {
+      "title": {
+        "fi": "Linkedin",
+        "en": "Linkedin",
+        "ru": "Linkedin"
+      },
+      "type": 4,
+      "id": 25,
+      "parent": 3,
+      "content": "https://www.linkedin.com/in/snezhana-blagodatskis-67645834b/"
+    },
+    {
+      "title": {
+        "fi": "REST API",
+        "en": "REST API",
+        "ru": "REST API"
+      },
+      "type": 2,
+      "id": 26,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "MySQL",
+        "en": "MySQL",
+        "ru": "MySQL"
+      },
+      "type": 2,
+      "id": 27,
+      "parent": 1,
+      "content": ""
+    },
+    {
+      "title": {
+        "fi": "Bootstrap",
+        "en": "Bootstrap",
+        "ru": "Bootstrap"
+      },
+      "type": 2,
+      "id": 28,
+      "parent": 1,
+      "content": ""
+    },
+
+
+    
+    {"last_id": 24 }
+  ]
+}

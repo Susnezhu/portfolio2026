@@ -4,33 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Su Portfolio</title>
-  <link rel="stylesheet" href="styles/default_elements.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page">
-    <div class="header" id="header">
-      <div class="header_content" id="header_content"></div>
+  <div class="content">
+    <div class="language-selector" id="language-selector">
+      <img src="lang/fi.png" class="languageBtn" id="fi-lang" style="animation-duration: 8s" onclick="changeLanguage('fi')">
+      <img src="lang/en.png" class="languageBtn" id="en-lang" style="animation-duration: 15s" onclick="changeLanguage('en')">
+      <img src="lang/ru.png" class="languageBtn" id="ru-lang" style="animation-duration: 10s" onclick="changeLanguage('ru')">
+    </div>
+    <h1 class="hello" id="hello-text">Hello! I am <a 
+      class="blink"
+      id="my-name-link" 
+      >Susanna</a></h1>
+    <p class="header-text" id="header-text">A creative programmer with a soul made of orange</p>
+
+    <p сlass="dive" id="dive">↓ dive in</p>
+    <button class="orange" id="fallImage"><img src="orange.png"></button>
+
+    <img src="juice.png" class="juice" id="juice">
+
+    <!-- Bubble buttons menu -->
+    <div class="bubble-buttons-menu-scroll events-none" id="bubble-buttons-menu">
+      <div class="bubble-scroll-container" id="bubble-scroll-container"></div>
     </div>
 
-    <div class="mobile_menu closed" id="mobile_menu"></div>
+    <!-- Custom cursor. In process.. -->
+    <!-- <img src="/cursor/custom_cursor2.png" class="myCursor" id="myCursor" style="display: none"> -->
 
-    <div class="content">
-      <div class="info_panel" id="info_panel"></div>
+    <div class="back_to_start_bubble_menu bubble" id="back_to_start_bubble_menu">go back</div>
 
-      <div class="media_panel" id="media_panel" style="display: flex; justify-content: center; align-items: center;">
-        <img src="./media/home.png" id="media" style="width: 200px; height: max-content;">
-      </div>
+    <!-- just bubbles flying around -->
+    <div class="background-bubbles">
+      <div class="bubble" style="width: 100px; height: 100px; top: 10%; left: 20%; animation-delay: 0s;"></div>
+      <div class="bubble" style="width: 80px; height: 80px; top: 50%; left: 10%; animation-delay: 2s;"></div>
+      <div class="bubble" style="width: 60px; height: 60px; top: 30%; left: 70%; animation-delay: 1s;"></div>
+      <div class="bubble" style="width: 120px; height: 120px; top: 60%; right: 20%; animation-delay: 3s;"></div>
+      <div class="bubble" style="width: 90px; height: 90px; top: 40%; left: 80%; animation-delay: 4s;"></div>
+      <div class="bubble" style="width: 70px; height: 70px; top: 25%; left: 40%; animation-delay: 1.5s;"></div>
+      <div class="bubble" style="width: 50px; height: 50px; top: 70%; left: 30%; animation-delay: 2.5s;"></div>
+      <div class="bubble" style="width: 110px; height: 110px; top: 20%; left: 60%; animation-delay: 3.5s;"></div>
     </div>
 
-    <div class="footer" id="footer">
-      <p>en</p>
-      <p>fi</p>
-      <p>ru</p>
+    <div class="footer">
+      <p><a
+        href="https://www.linkedin.com/in/snezhana-blagodatskis-67645834b/" 
+        id="my-name-link" 
+        target="_blank"
+        >Susnezhu </a>© <span id="current-year"></span>
+      </p>
+      <p>Potfolio is currently on beta version. But really nice to see you already!</p>
     </div>
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
