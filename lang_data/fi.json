@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "home": "Pääsivu",
+    "about": "Minusta",
+    "projects": "Projektit",
+    "contact": "Yhteys"
+  },
+
+  "home": {
+    "title": "Hei! Olen Susanna",
+
+    "description": "Full Stack -kehittäjä, jolla on käytännön kokemusta frontend- ja backend-kehityksestä, verkkosivujen ylläpidosta ja oikeiden ohjelmistoprojektien parissa työskentelystä.",
+
+    "hireButton": "Ota yhteyttä",
+
+    "cvButton": "Lataa CV",
+
+    "jobStatus": "Vapaana uusiin työtehtäviin",
+
+    "location": "Suomi",
+
+    "follow": "Seuraa minua:",
+
+    "confirm": "Olet lataamassa pdf tiedoston. Jatkaa?"
+  },
+
+  "about": {
+    "content": [
+      {
+        "title": "Hei! Olen Susanna, Suomessa asuva Full Stack -kehittäjä.",
+        "lines": [
+          "Aloin opiskella ohjelmointia, koska nautin ongelmien ratkaisemisesta ja siitä, että saan ymmärtää, miten asiat toimivat.",
+          "Minulla on kokemusta sekä frontend- että backend-kehityksestä. Olen työskennellyt verkkosivujen, APIen, tietokantojen ja kokonaisten sovellusten parissa. Tällä hetkellä keskityn erityisesti backend-kehityksen osaamiseni vahvistamiseen."
+        ]
+      },
+      {
+        "title": "Miten ajattelen",
+        "lines": [
+          "Olen aina pitänyt pulmista ja logiikkapeleistä. Nautin tilanteista, joissa minun täytyy itse selvittää ratkaisu sen sijaan, että seuraisin valmista ratkaisua.",
+          "Kun kohtaan ongelman, aloitan yleensä jakamalla sen pienempiin osiin. Haluan ymmärtää, mitä tapahtuu, miksi se tapahtuu ja miten eri osat liittyvät toisiinsa ennen kuin päätän, miten ongelma kannattaa ratkaista.",
+          "Pidän myös paljon järjestelmällisyydestä. Kirjoitinpa koodia, järjestelin tietoa tai työskentelin projektin parissa, pidän siitä, että kaikella on selkeä paikka ja tarkoitus."
+        ]
+      },
+      {
+        "title": "Mistä kaikki alkoi",
+        "lines": [
+          "Aloin oikeastaan ohjelmoida jo noin 12-vuotiaana, vaikka en silloin edes tiennyt, että kyse oli ohjelmoinnista.",
+          "Tein Pythonilla pieniä pelejä. Ajattelin vain kirjoittavani tarinoita ja lisääväni peleihin erilaisia asioita sanojen, kirjainten ja pienen logiikan avulla. En ajatellut ohjelmointia tai sitä, että minusta tulisi kehittäjä. Halusin vain saada pelit toimimaan niin kuin olin kuvitellut.",
+          "Jälkikäteen ajateltuna se oli todennäköisesti ensimmäinen kosketukseni ohjelmointiin. Kirjoitin jo koodia, kokeilin erilaisia asioita ja selvitin, miten saisin pelin tekemään juuri sen, mitä halusin.",
+          "Sen jälkeen pidin ohjelmoinnista taukoa ja palasin sen pariin vasta paljon myöhemmin. Tällä kertaa ymmärsin, mitä oikeastaan olin tekemässä, ja tajusin, että pidin edelleen eniten samasta asiasta: ongelmien selvittämisestä ja siitä, että saan jonkin toimimaan."
+        ]
+      },
+      {
+        "title": "Mitä käytän",
+        "lines": [
+          "Työskentelen tällä hetkellä JavaScriptin, TypeScriptin, Reactin, Node.js:n, Expressin, PostgreSQL:n ja REST APIen kanssa. Minulla on myös kokemusta GraphQL:stä, MongoDB:stä, Sequelizesta ja React Nativesta.",
+          "Frontend-osaamiseni on tällä hetkellä vahvempaa, mutta kehitän aktiivisesti backend-osaamistani ja työskentelen projektien parissa, joissa voin rakentaa ja ymmärtää koko sovelluksen kokonaisuuden.",
+          "<a href='https://www.linkedin.com/in/susnezhu/details/skills/' target='_blank'>Katso kaikki osaamiseni →</a>"
+        ]
+      },
+      {
+        "title": "Tällä hetkellä",
+        "lines": [
+          "Tällä hetkellä opiskelen ja rakennan omia projektejani samalla, kun kartutan käytännön kokemusta kehittäjänä.",
+          "Olen erityisen kiinnostunut backend-kehityksestä, tietokannoista ja API-rajapinnoista. Haluan kehittyä sovellusten rakentamisessa niin, että niiden eri osat toimivat hyvin yhdessä sen sijaan, että keskittyisin vain yhteen kehityksen osa-alueeseen.",
+          "Opittavaa on edelleen paljon, ja pidän siitä. Aina löytyy jotain uutta selvitettävää."
+        ]
+      }
+    ]
+  },
+
+  "projects": {
+    "content": [
+      {
+        "title": "ChoreSet",
+        "description": "Full Stack -sovellus perheen tehtävien ja palkintojen hallintaan. Vanhemmat voivat luoda lapsille tehtäviä, hyväksyä suoritetut tehtävät ja hallita palkintoja. Toteutettu Reactilla, TypeScriptillä, Node.js:llä, Expressillä ja PostgreSQL:llä.",
+        "url": "https://github.com/Susnezhu/ChoreSet",
+        "urlTitle": "GitHub"
+      },
+      {
+        "title": "Blog Application",
+        "description": "Full Stack -blogisovellus, jossa on REST API blogikirjoitusten luomiseen, katseluun ja poistamiseen. Toteutettu Node.js:llä, Expressillä, PostgreSQL:llä ja Sequelizella.",
+        "url": "https://github.com/Susnezhu/fullstack-open-course",
+        "urlTitle": "GitHub"
+      },
+      {
+        "title": "Rate Repository",
+        "description": "Mobiilisovellus GitHub-repositorioiden selaamiseen ja arviointiin. Toteutettu React Nativella, TypeScriptillä ja GraphQL:llä. Sovelluksessa on myös käyttäjien autentikointi ja tietokanta.",
+        "url": "https://github.com/Susnezhu/fullstack-open-course",
+        "urlTitle": "GitHub"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Puhutaan",
+    "line1": "Etsitkö kehittäjää seuraavaan projektiisi?",
+    "line2": "Olen avoin uusille mahdollisuuksille ja kiinnostaville projekteille."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "title": "Hello! I am Susanna",
+
+    "description": "Full Stack Developer with hands-on experience in frontend and backend development, website maintenance, and real-world software projects.",
+
+    "hireButton": "Hire Me",
+
+    "cvButton": "Download CV",
+
+    "jobStatus": "Available Now",
+
+    "location": "Finland",
+
+    "follow": "Follow me:",
+
+    "confirm": "You are downloading pdf file. Continue?"
+  },
+
+  "about": {
+    "content": [
+      {
+        "title": "Hello! I’m Susanna, a Full Stack Developer based in Finland.",
+        "lines": [
+          "I started learning programming because I genuinely enjoy solving problems and understanding how things work.",
+          "I have experience with both frontend and backend development. I’ve worked with websites, APIs, databases and complete applications, and I’m currently focusing more on the backend side of development."
+        ]
+      },
+      {
+        "title": "How I Think",
+        "lines": [
+          "I’ve always liked puzzles and logic games. I enjoy situations where I have to figure something out instead of simply following an existing solution.",
+          "When I’m working on a problem, I usually start by breaking it into smaller parts. I like to understand what is happening, why it is happening, and how everything fits together before deciding how to solve it.",
+          "I also really like structure. Whether I’m writing code, organising information or working on a project, I prefer when things have a clear place and purpose."
+        ]
+      },
+      {
+        "title": "Where It Started",
+        "lines": [
+          "I actually started programming when I was around 12, although I didn’t really know that’s what I was doing.",
+          "I used to make small games in Python. I thought I was just writing stories and adding different things to my games using words, letters and a bit of logic. I wasn’t thinking about programming or becoming a developer. I just wanted to make things work the way I imagined them.",
+          "Looking back, it was probably my first introduction to programming. I was already writing code, experimenting with it, and figuring out how to make the game do what I wanted.",
+          "I stopped for a while after that and came back to programming much later. This time I understood what I was actually doing, and I realised that I still really enjoyed the same part of it: figuring things out and making something work."
+        ]
+      },
+      {
+        "title": "What I Work With",
+        "lines": [
+          "I currently work with JavaScript, TypeScript, React, Node.js, Express, PostgreSQL and REST APIs. I also have experience with GraphQL, MongoDB, Sequelize and React Native.",
+          "My frontend experience is currently stronger, but I’m actively developing my backend skills and working on projects where I can build and understand the whole application.",
+          "<a href='https://www.linkedin.com/in/susnezhu/details/skills/' target='_blank'>View skills →</a>"
+        ]
+      },
+      {
+        "title": "Currently",
+        "lines": [
+          "Right now, I’m studying and building my own projects while gaining practical experience as a developer.",
+          "I’m especially interested in backend development, databases and APIs. I want to keep getting better at building applications where the different parts actually work together, instead of only focusing on one side of development.",
+          "I’m still learning a lot, and I actually enjoy that part. There is always something new to figure out."
+        ]
+      }
+    ]
+  },
+  
+  "projects": {
+    "content": [
+      {
+        "title": "ChoreSet",
+        "description": "A Full Stack family task and reward application. Parents can create tasks for children, approve completed tasks and manage rewards. Built with React, TypeScript, Node.js, Express and PostgreSQL.",
+        "url": "https://github.com/Susnezhu/ChoreSet",
+        "urlTitle": "GitHub"
+      },
+      {
+        "title": "Blog Application",
+        "description": "A full stack blog application with a REST API for creating, viewing and deleting blog posts. Built with Node.js, Express, PostgreSQL and Sequelize.",
+        "url": "https://github.com/Susnezhu/fullstack-open-course/tree/main/osa13/bloglist",
+        "urlTitle": "GitHub"
+      },
+      {
+        "title": "Rate Repository",
+        "description": "A mobile application for browsing and rating GitHub repositories. Built with React Native, TypeScript and GraphQL, with authentication and data stored in a database.",
+        "url": "https://github.com/Susnezhu/fullstack-open-course/tree/main/osa10",
+        "urlTitle": "GitHub"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Let's talk",
+    "line1": "Looking for a developer for your next project?",
+    "line2": "Open to new opportunities and interesting projects."
+  }
+}
